@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="./src/output.css" rel="stylesheet" />
+</head>
+
+<body class="mx-auto min-w-xs max-w-7xl bg-black text-white font-firamono">
+  <header></header>
+
+  <main class="w-full">
+    <!-- Hero -->
+    <section class="relative w-full h-svh md:h-auto md:aspect-video md:text-lg">
+      <!-- Imagen como fondo -->
+      <img src="./src/img/cyberware/cyberware.png" alt="hero" class="absolute inset-0 size-full object-cover" />
+
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <!-- Contenido encima -->
+      <div
+        class="relative flex size-full flex-col items-center justify-center gap-2 text-center md:gap-4 font-orbitron">
+        <!-- Slogan -->
+        <p class="text-sm md:text-base uppercase">
+          The best cyberware in Night City
+        </p>
+        <!-- Titulo -->
+        <h1 class="text-4xl font-bold uppercase md:text-6xl text-neon-red">
+          Chrome Revolution
+        </h1>
+        <!-- Subtitulo -->
+        <p class="text-sm md:text-base uppercase">The human evolution</p>
+        <!-- Call to action -->
+        <a href="#"
+          class="border border-neon-red bg-black px-3 py-2 uppercase transition hover:bg-neon-red hover:text-black">
+          Evoluciona ahora
+        </a>
+      </div>
+    </section>
+
+    <!-- Mas vendido -->
+    <section class="flex w-full justify-center p-6 text-xl md:text-2xl">
+      <div class="w-full max-w-6xl flex flex-col items-center gap-4">
+        <!-- Barra de título -->
+        <div class="px-4 py-2">
+          <h2 class="font-bold uppercase tracking-wider text-center font-orbitron">
+            El ciberware mas vendido
+          </h2>
+        </div>
+
+        <!-- Contenido -->
+        <div class="flex w-full flex-row flex-wrap justify-center gap-3 lg:gap-6">
+          <a href="products/SandevistanApogee.html" target="_self"
+            class="relative w-full max-w-72 aspect-square overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="./src/img/cyberware/SandevistanApogee.webp" alt="Sandevistan Apogee"
+              class="absolute inset-0 size-full object-cover" />
+            <div class="absolute inset-0 flex flex-col items-start justify-end p-3">
+              <p class="text-lg font-bold uppercase md:text-xl">
+                Sandevistan Apogee
+              </p>
+              <p class="text-sm md:text-base">$35000</p>
+            </div>
+          </a>
+          <a href="products/GorillaArms.html" target="_self"
+            class="relative w-full max-w-72 aspect-square overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="./src/img/cyberware/GorillaArms.webp" alt="Gorilla Arms"
+              class="absolute inset-0 size-full object-cover" />
+            <div class="absolute inset-0 flex flex-col items-start justify-end p-3">
+              <p class="text-lg font-bold uppercase md:text-xl">
+                Gorilla Arms
+              </p>
+              <p class="text-sm md:text-base">$35000</p>
+            </div>
+          </a>
+          <a href="products/KiroshiOptics.html" target="_self"
+            class="relative w-full max-w-72 aspect-square overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="./src/img/cyberware/KiroshiOptics.webp" alt="Kiroshi Optics Basic"
+              class="absolute inset-0 size-full object-cover" />
+            <div class="absolute inset-0 flex flex-col items-start justify-end p-3">
+              <p class="text-lg font-bold uppercase md:text-xl">
+                Kiroshi Optics Basic
+              </p>
+              <p class="text-sm md:text-base">$35000</p>
+            </div>
+          </a>
+          <a href="products/MilitechBerserk.html" target="_self"
+            class="relative w-full max-w-72 aspect-square overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="./src/img/cyberware/MilitechBerserk.webp" alt="Militech Berserk"
+              class="absolute inset-0 size-full object-cover" />
+            <div class="absolute inset-0 flex flex-col items-start justify-end p-3">
+              <p class="text-lg font-bold uppercase md:text-xl">
+                Militech Berserk
+              </p>
+              <p class="text-sm md:text-base">$35000</p>
+            </div>
+          </a>
+          <a href="products/ChromeCompressor.html" target="_self"
+            class="relative w-full max-w-72 aspect-square overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="./src/img/cyberware/ChromeCompressor.webp" alt="Chrome Compressor"
+              class="absolute inset-0 size-full object-cover" />
+            <div class="absolute inset-0 flex flex-col items-start justify-end p-3">
+              <p class="text-lg font-bold uppercase md:text-xl">
+                Chrome Compressor
+              </p>
+              <p class="text-sm md:text-base">$35000</p>
+            </div>
+          </a>
+          <a href="products/NetWatchNetdriver.html" target="_self"
+            class="relative w-full max-w-72 aspect-square overflow-hidden transform transition duration-300 hover:scale-105">
+            <img src="./src/img/cyberware/NetWatchNetdriver.webp" alt="NetWatch Netdriver"
+              class="absolute inset-0 size-full object-cover" />
+            <div class="absolute inset-0 flex flex-col items-start justify-end p-3">
+              <p class="text-lg font-bold uppercase md:text-xl">
+                NetWatch Netdriver
+              </p>
+              <p class="text-sm md:text-base">$35000</p>
+            </div>
+          </a>
+        </div>
+        <a href="#"
+          class="border border-neon-red bg-black px-3 py-2 uppercase text-neon-red transition hover:cursor-pointer hover:bg-neon-red hover:text-black font-orbitron">
+          Ver mas Cyberware
+        </a>
+      </div>
+    </section>
+
+    <!-- Que es el ciberware -->
+    <section class="flex w-full justify-center py-6">
+      <div class="w-9/10 flex flex-col border-2 border-neon-red bg-black/80 shadow-lg backdrop-blur md:w-3/4">
+        <!-- Barra de título -->
+        <div class="bg-black/60 border-b border-neon-red px-4 py-2">
+          <h2 class="text-xl font-bold uppercase tracking-wider md:text-2xl">
+            ¿Que es el ciberware?
+          </h2>
+        </div>
+
+        <!-- Contenido -->
+        <div class="flex flex-col gap-4 p-4 md:flex-row">
+          <!-- Texto -->
+          <div class="w-full md:w-2/3">
+            <p class="mb-2 text-sm md:text-base">
+              El ciberware son implantes y tecnología artificial que se
+              integran en el cuerpo humano para aumentar o mejorar sus
+              capacidades, sirviendo como una interfaz entre el cuerpo y las
+              máquinas.
+            </p>
+            <p class="text-sm md:text-base">
+              Abarca prótesis avanzadas, interfaces cerebro-computadora y
+              otras tecnologías biomédicas emergentes que buscan conectar el
+              sistema nervioso humano directamente con sistemas informáticos.
+            </p>
+          </div>
+
+          <!-- Imagen cuadrada -->
+          <div class="flex w-full justify-center md:w-1/3">
+            <div class="aspect-square w-full max-w-sm overflow-hidden rounded-md border border-neon-red md:max-w-md">
+              <img src="./src/img/cyberware/KiroshiOpticsImplant.webp" alt="CyberwareImplant"
+                class="h-full w-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-6">
+      <h2 class="mb-2 text-center text-xl font-bold uppercase md:text-2xl font-orbitron">
+        Newsletter
+      </h2>
+      <p class="mb-4 text-center text-xs uppercase md:text-sm">
+        Suscribete a nuestro newsletter para estar al dia con el ciberware mas
+        puntero
+      </p>
+      <form action="" class="flex flex-col items-center justify-center">
+        <input type="email" placeholder="tucorreo@ejemplo.com"
+          class="mb-4 w-3/4 border border-neon-red px-2 py-3 md:w-1/2" />
+        <button type="submit"
+          class="border border-neon-red bg-black px-3 py-2 uppercase text-neon-red transition hover:cursor-pointer hover:bg-neon-red hover:text-black font-orbitron">
+          Suscribirse
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer></footer>
+</body>
+
+</html>

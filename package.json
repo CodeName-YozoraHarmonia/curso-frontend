@@ -1,0 +1,14 @@
+{
+  "name": "curso-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "embla-carousel": "^8.6.0",
+    "tailwindcss": "^4.1.14"
+  }
+}
