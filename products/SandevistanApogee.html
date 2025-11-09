@@ -1,66 +1,242 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/output.css" rel="stylesheet" />
+  </head>
 
-  <link href="/src/output.css" rel="stylesheet" />
-</head>
-
-<body class="mx-auto min-w-xs max-w-7xl bg-black text-white font-firamono">
-  <main class="w-full">
-    <section class="flex flex-col w-full p-6">
-      <!-- Hero del producto -->
-      <div class="flex flex-col w-full md:flex-row md:justify-center justify-between gap-6">
-        <!-- Imagen -->
-        <div class="w-full md:w-1/2 flex justify-center md:justify-start max-w-96 mx-auto md:mx-0">
-          <img src="/src/img/cyberware/SandevistanApogee.webp" alt="Sandevistan Apogee"
-            class="w-3/4 md:w-full border border-neon-red rounded-md shadow-lg object-cover" />
+  <body class="mx-auto min-w-xs max-w-7xl bg-black text-white font-firamono">
+    <header class="w-full">
+      <nav class="px-8 py-4 flex items-center gap-4">
+        <div>
+          <svg class="size-10 text-white sm:hidden">
+            <use href="/src/icons/sprite-outlined.svg#icon-menu"></use>
+          </svg>
         </div>
-        <!-- Info producto -->
-        <div class="w-full md:w-1/2 flex flex-col justify-center gap-4 text-center md:text-left">
-          <h1 class="text-2xl md:text-4xl font-bold uppercase font-orbitron">
-            Sandevistan Apogee
-          </h1>
-          <p class="text-lg md:text-xl text-neon-red font-semibold">$3500</p>
-          <button
-            class="mx-auto md:mx-0 w-full max-w-xs border border-neon-red bg-black px-4 py-2 text-neon-red uppercase font-medium transition hover:bg-neon-red hover:text-black font-orbitron">
-            Comprar ahora
-          </button>
+
+        <a href="/index.html">
+          <img src="/src/img/logo/logo.png" alt="logo" class="max-h-10" />
+        </a>
+
+        <ul class="hidden sm:flex gap-4 grow">
+          <li>
+            <a href="/index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="/products/list.html">Ciberware</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contacto</a>
+          </li>
+          <li>
+            <a href="/faq.html">Preguntas Frecuentes</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="w-full">
+      <section class="flex flex-col w-full p-6">
+        <!-- Hero del producto -->
+        <div
+          class="flex flex-col w-full md:flex-row md:justify-center justify-between gap-6"
+        >
+          <!-- Imagen -->
+          <div
+            class="w-full md:w-1/2 flex justify-center md:justify-start max-w-96 mx-auto md:mx-0"
+          >
+            <img
+              src="/src/img/cyberware/SandevistanApogee.webp"
+              alt="Sandevistan Apogee"
+              class="w-3/4 md:w-full border border-neon-red rounded-md shadow-lg object-cover"
+            />
+          </div>
+          <!-- Info producto -->
+          <div
+            class="w-full md:w-1/2 flex flex-col justify-center gap-4 text-center md:text-left"
+          >
+            <h1 class="text-2xl md:text-4xl font-bold uppercase font-orbitron">
+              Sandevistan Apogee
+            </h1>
+            <p class="text-lg md:text-xl text-neon-red font-semibold">$3500</p>
+            <button
+              class="mx-auto md:mx-0 w-full max-w-xs border border-neon-red bg-black px-4 py-2 text-neon-red uppercase font-medium transition hover:bg-neon-red hover:text-black font-orbitron"
+            >
+              Comprar ahora
+            </button>
+          </div>
         </div>
-      </div>
-      <!-- Descripción -->
-      <div class="flex flex-col w-full max-w-9/10 justify-center mx-auto">
-        <div class="mt-8 text-sm md:text-base leading-relaxed">
-          <p class="mb-2">
-            El <span class="font-bold">Sandevistan Apogee</span> Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Nisi quo repudiandae
-            ullam harum ex rem mollitia sint ad quas et recusandae laborum
-            eveniet est dolorem doloribus fugit minima, velit quaerat.
-          </p>
+        <!-- Descripción -->
+        <div class="flex flex-col w-full max-w-9/10 justify-center mx-auto">
+          <div class="mt-8 text-sm md:text-base leading-relaxed">
+            <p class="mb-2">
+              El <span class="font-bold">Sandevistan Apogee</span> Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Nisi quo repudiandae
+              ullam harum ex rem mollitia sint ad quas et recusandae laborum
+              eveniet est dolorem doloribus fugit minima, velit quaerat.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Assumenda enim ex soluta dolor eveniet optio voluptatum ipsum
+              recusandae ratione vero. Provident cupiditate quo impedit sint
+              consequuntur, unde modi et minima.
+            </p>
+          </div>
+          <!-- Especificaciones -->
+          <div class="mt-8">
+            <h2
+              class="text-lg md:text-xl font-bold uppercase mb-3 font-orbitron"
+            >
+              Especificaciones
+            </h2>
+            <ul class="list-disc pl-5 space-y-1 text-sm md:text-base">
+              <li>Lorem ipsum dolor, sit amet</li>
+              <li>Lorem ipsum dolor, sit amet</li>
+              <li>Lorem ipsum dolor, sit amet</li>
+              <li>Lorem ipsum dolor, sit amet</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="w-full">
+      <div class="flex flex-col gap-4 px-8 py-8">
+        <div class="flex flex-col justify-between gap-4 sm:flex-row">
+          <div>
+            <ul class="gap-2">
+              <li>
+                <a href="/index.html" class="transition hover:text-neon-red"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/products/list.html"
+                  class="transition hover:text-neon-red"
+                  >Ciberware</a
+                >
+              </li>
+              <li>
+                <a href="/contact.html" class="transition hover:text-neon-red"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a href="/faq.html" class="transition hover:text-neon-red"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="gap-2">
+              <li class="flex items-center gap-2">
+                <svg class="size-6 text-white">
+                  <use href="/src/icons/sprite-outlined.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:1112345678" class="transition hover:text-neon-red"
+                  >11 1234-5678</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="size-6 text-white">
+                  <use href="/src/icons/sprite-outlined.svg#icon-mail"></use>
+                </svg>
+                <a
+                  href="mailto:example@example.com"
+                  class="transition hover:text-neon-red"
+                  >example@example.com</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="size-6 text-white">
+                  <use
+                    href="/src/icons/sprite-outlined.svg#icon-whatsapp"
+                  ></use>
+                </svg>
+                <a
+                  href="https://www.whatsapp.com"
+                  class="transition hover:text-neon-red"
+                  >11 1234-5678</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="size-6 text-white">
+                  <use href="/src/icons/sprite-outlined.svg#icon-map-pin"></use>
+                </svg>
+                <a
+                  href="https://www.google.com/maps"
+                  class="transition hover:text-neon-red"
+                  >Calle Falsa 1234</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="flex flex-row gap-4">
+              <li>
+                <a
+                  href="https://www.instagram.com"
+                  class="text-white transition hover:text-neon-red"
+                >
+                  <svg class="size-8">
+                    <use
+                      href="/src/icons/sprite-outlined.svg#icon-instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com"
+                  class="text-white transition hover:text-neon-red"
+                >
+                  <svg class="size-8">
+                    <use
+                      href="/src/icons/sprite-outlined.svg#icon-facebook"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com"
+                  class="text-white transition hover:text-neon-red"
+                >
+                  <svg class="size-8">
+                    <use
+                      href="/src/icons/sprite-outlined.svg#icon-x"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com"
+                  class="text-white transition hover:text-neon-red"
+                >
+                  <svg class="size-8">
+                    <use
+                      href="/src/icons/sprite-outlined.svg#icon-tiktok"
+                    ></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-between gap-4 text-xs font-light">
+          <p>© Chrome Evolution - 2025. Todos los derechos reservados</p>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Assumenda enim ex soluta dolor eveniet optio voluptatum ipsum
-            recusandae ratione vero. Provident cupiditate quo impedit sint
-            consequuntur, unde modi et minima.
+            desarrollado por
+            <a
+              href="https://github.com/CodeName-YozoraHarmonia"
+              class="transition hover:text-neon-red"
+              >Yozora Harmonia</a
+            >
           </p>
         </div>
-        <!-- Especificaciones -->
-        <div class="mt-8">
-          <h2 class="text-lg md:text-xl font-bold uppercase mb-3 font-orbitron">
-            Especificaciones
-          </h2>
-          <ul class="list-disc pl-5 space-y-1 text-sm md:text-base">
-            <li>Lorem ipsum dolor, sit amet</li>
-            <li>Lorem ipsum dolor, sit amet</li>
-            <li>Lorem ipsum dolor, sit amet</li>
-            <li>Lorem ipsum dolor, sit amet</li>
-          </ul>
-        </div>
       </div>
-    </section>
-  </main>
-</body>
-
+    </footer>
+  </body>
 </html>
